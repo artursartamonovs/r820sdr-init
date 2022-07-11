@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D77338F27E136D4001E36AA /* r820.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77338E27E136D4001E36AA /* r820.swift */; };
 		8DCBA7FD27DA47130064EEA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA7FC27DA47130064EEA9 /* main.swift */; };
 		8DCBA85727DA51230064EEA9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCBA84A27DA50760064EEA9 /* Security.framework */; };
 		8DCBA85827DA512B0064EEA9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCBA84C27DA507D0064EEA9 /* CoreFoundation.framework */; };
@@ -67,7 +68,6 @@
 		8DCBA8C927DA5EF00064EEA9 /* reg_field.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA8A927DA5EA70064EEA9 /* reg_field.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8DCBA8D027DA63A70064EEA9 /* rtl-sdr.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA8B127DA5EA70064EEA9 /* rtl-sdr.h */; };
 		8DCBA8D127DA63B20064EEA9 /* libusb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA81427DA48DE0064EEA9 /* libusb.h */; };
-		8DCBA8D327DA66B60064EEA9 /* r820.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA8D227DA66B60064EEA9 /* r820.swift */; };
 		8DCBA8DB27DA6C7B0064EEA9 /* librtlsdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA8D627DA6A950064EEA9 /* librtlsdr.c */; };
 		8DCBA8DC27DAAB0A0064EEA9 /* libusb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA81427DA48DE0064EEA9 /* libusb.h */; };
 		8DCBA8DD27DAABF80064EEA9 /* rtl-sdr_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA8AB27DA5EA70064EEA9 /* rtl-sdr_export.h */; };
@@ -103,7 +103,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8DCBA7F927DA47130064EEA9 /* r820sdr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = r820sdr; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D77338E27E136D4001E36AA /* r820.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = r820.swift; sourceTree = "<group>"; };
+		8DCBA7F927DA47130064EEA9 /* r820sdr-init */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "r820sdr-init"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCBA7FC27DA47130064EEA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8DCBA80927DA48DD0064EEA9 /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = descriptor.c; sourceTree = "<group>"; };
 		8DCBA80A27DA48DD0064EEA9 /* make.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = make.mk; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 		8DCBA8AF27DA5EA70064EEA9 /* tuner_r82xx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuner_r82xx.h; sourceTree = "<group>"; };
 		8DCBA8B027DA5EA70064EEA9 /* tuner_e4k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuner_e4k.h; sourceTree = "<group>"; };
 		8DCBA8B127DA5EA70064EEA9 /* rtl-sdr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rtl-sdr.h"; sourceTree = "<group>"; };
-		8DCBA8D227DA66B60064EEA9 /* r820.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = r820.swift; sourceTree = "<group>"; };
 		8DCBA8D527DA6A940064EEA9 /* r820sdr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "r820sdr-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DCBA8D627DA6A950064EEA9 /* librtlsdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = librtlsdr.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,7 @@
 		8DCBA7FA27DA47130064EEA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DCBA7F927DA47130064EEA9 /* r820sdr */,
+				8DCBA7F927DA47130064EEA9 /* r820sdr-init */,
 				8DCBA85227DA50E00064EEA9 /* libusb.dylib */,
 				8DCBA87727DA59FD0064EEA9 /* libusb.a */,
 				8DCBA89527DA5E330064EEA9 /* libr820.a */,
@@ -226,6 +226,7 @@
 			children = (
 				8DCBA80527DA48620064EEA9 /* library */,
 				8DCBA80427DA47870064EEA9 /* src */,
+				8D77338E27E136D4001E36AA /* r820.swift */,
 			);
 			path = hardware;
 			sourceTree = "<group>";
@@ -251,7 +252,6 @@
 			children = (
 				8DCBA89C27DA5E620064EEA9 /* include */,
 				8DCBA89B27DA5E590064EEA9 /* src */,
-				8DCBA8D227DA66B60064EEA9 /* r820.swift */,
 			);
 			path = r820;
 			sourceTree = "<group>";
@@ -395,9 +395,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8DCBA7F827DA47130064EEA9 /* r820sdr */ = {
+		8DCBA7F827DA47130064EEA9 /* r820sdr-init */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DCBA80027DA47130064EEA9 /* Build configuration list for PBXNativeTarget "r820sdr" */;
+			buildConfigurationList = 8DCBA80027DA47130064EEA9 /* Build configuration list for PBXNativeTarget "r820sdr-init" */;
 			buildPhases = (
 				8DCBA82427DA4D310064EEA9 /* Headers */,
 				8DCBA7F527DA47130064EEA9 /* Sources */,
@@ -410,9 +410,9 @@
 				8DCBA8CE27DA631D0064EEA9 /* PBXTargetDependency */,
 				8DCBA8CC27DA63190064EEA9 /* PBXTargetDependency */,
 			);
-			name = r820sdr;
+			name = "r820sdr-init";
 			productName = r820sdr;
-			productReference = 8DCBA7F927DA47130064EEA9 /* r820sdr */;
+			productReference = 8DCBA7F927DA47130064EEA9 /* r820sdr-init */;
 			productType = "com.apple.product-type.tool";
 		};
 		8DCBA85127DA50E00064EEA9 /* libusb */ = {
@@ -491,7 +491,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8DCBA7F427DA47130064EEA9 /* Build configuration list for PBXProject "r820sdr" */;
+			buildConfigurationList = 8DCBA7F427DA47130064EEA9 /* Build configuration list for PBXProject "r820sdr-init" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -504,7 +504,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DCBA7F827DA47130064EEA9 /* r820sdr */,
+				8DCBA7F827DA47130064EEA9 /* r820sdr-init */,
 				8DCBA85127DA50E00064EEA9 /* libusb */,
 				8DCBA87627DA59FD0064EEA9 /* libusb.a */,
 				8DCBA89427DA5E330064EEA9 /* r820 */,
@@ -518,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCBA7FD27DA47130064EEA9 /* main.swift in Sources */,
-				8DCBA8D327DA66B60064EEA9 /* r820.swift in Sources */,
+				8D77338F27E136D4001E36AA /* r820.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,7 +820,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DCBA7F427DA47130064EEA9 /* Build configuration list for PBXProject "r820sdr" */ = {
+		8DCBA7F427DA47130064EEA9 /* Build configuration list for PBXProject "r820sdr-init" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DCBA7FE27DA47130064EEA9 /* Debug */,
@@ -829,7 +829,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DCBA80027DA47130064EEA9 /* Build configuration list for PBXNativeTarget "r820sdr" */ = {
+		8DCBA80027DA47130064EEA9 /* Build configuration list for PBXNativeTarget "r820sdr-init" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DCBA80127DA47130064EEA9 /* Debug */,

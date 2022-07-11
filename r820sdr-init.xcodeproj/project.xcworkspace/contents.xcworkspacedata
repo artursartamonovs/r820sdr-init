@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/jackyjack/Projects/SDR/r820sdr/r820sdr-init.xcodeproj">
    </FileRef>
 </Workspace>
